@@ -39,7 +39,7 @@ export const ContactSection = () => {
                   <Mail className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-medium">Email</h4>
+                  <h4 className="font-medium text-left">Email</h4>
                   <a
                     href="mailto:singhjagriti84@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
@@ -53,7 +53,7 @@ export const ContactSection = () => {
                   <Linkedin className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-medium">LinkedIn</h4>
+                  <h4 className="font-medium text-left">LinkedIn</h4>
                   <a
                     href="https://www.linkedin.com/in/jagritisingh84"
                     target="_blank"
@@ -69,7 +69,7 @@ export const ContactSection = () => {
                   <MapPin className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-medium">Location</h4>
+                  <h4 className="font-medium text-left">Location</h4>
                   <span className="text-muted-foreground">
                     Vadodara, Gujarat, India
                   </span>

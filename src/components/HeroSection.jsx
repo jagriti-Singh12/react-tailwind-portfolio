@@ -1,6 +1,22 @@
 import { ArrowDown } from "lucide-react";
+import { cn } from "../lib/utils";
+import { useState, useEffect } from "react";
 
 export const HeroSection = () => {
+  const [showArrow, setShowArrow] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 150) {
+        setShowArrow(false);
+      } else {
+        setShowArrow(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <section
       id="hero"
@@ -33,7 +49,13 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 tranform -translate-x-1/2 flex flex-col items-center animate-bounce">
+      <div
+        className={cn(
+          "absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center",
+          "transition-opacity duration-500 animate-bounce",
+          showArrow ? "opacity-100" : "opacity-0"
+        )}
+      >
         <span className="text-sm text-muted-foreground mb-2">Scroll</span>
         <ArrowDown className="h-5 w-5 text-primary" />
       </div>
