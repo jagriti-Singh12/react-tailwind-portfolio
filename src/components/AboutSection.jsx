@@ -17,7 +17,7 @@ export const AboutSection = () => {
               I’ve always believed that every detail matters — whether it’s a
               line of code, a stroke of design, or the cadence of words. This
               belief has shaped my journey as a Front-End Developer over the
-              past 2.7 years.
+              past 2+ years.
             </p>
             <p className="text-muted-foreground">
               It began with curiosity — a fascination for how creativity and
