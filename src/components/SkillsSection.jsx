@@ -1,22 +1,22 @@
 import { useState } from "react";
 import { cn } from "../lib/utils";
 const skills = [
-  { name: "HTML5", level: 95, category: "languages" },
-  { name: "CSS3", level: 95, category: "languages" },
-  { name: "JavaScript(ES6+)", level: 90, category: "languages" },
-  { name: "jQuery", level: 90, category: "languages" },
+  { name: "HTML5", level: 90, category: "languages" },
+  { name: "CSS3", level: 75, category: "languages" },
+  { name: "JavaScript(ES6+)", level: 70, category: "languages" },
+  { name: "jQuery", level: 75, category: "languages" },
 
   //FrameWork
   { name: "React", level: 50, category: "framework" },
-  { name: "Bootstrap", level: 90, category: "framework" },
-  { name: "Tailwind CSS", level: 90, category: "framework" },
+  { name: "Bootstrap", level: 60, category: "framework" },
+  { name: "Tailwind CSS", level: 50, category: "framework" },
   { name: "Vue.js", level: 60, category: "framework" },
 
   //Tools
-  { name: "Git/GitHub", level: 90, category: "tools" },
-  { name: "Sitecore", level: 90, category: "tools" },
+  { name: "Git/GitHub", level: 60, category: "tools" },
+  { name: "Sitecore", level: 70, category: "tools" },
   { name: "Storybook", level: 85, category: "tools" },
-  { name: "VS Code", level: 95, category: "tools" },
+  { name: "VS Code", level: 65, category: "tools" },
 ];
 
 const categories = ["all", "languages", "framework", "tools"];
