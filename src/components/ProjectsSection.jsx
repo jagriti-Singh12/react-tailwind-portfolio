@@ -20,6 +20,17 @@ const projects = [
     demoUrl:
       "https://www.diageo.com/en/news-and-media/consumer-trends-report/foresight-report-2025",
   },
+    {
+    id: 3,
+    title: "Vue3 Quiz App",
+    description:
+      "An interactive Vue 3 quiz app to learn and test Vue concepts — covering Reactivity, Components, Composables, Vue Router, Pinia, and Performance. Built with Vite, Pinia state machine, useTimer composable, and route-based lazy loading.",
+    image: "/projects/vue3-quiz.png",
+    tags: ["Vue3", "Pinia", "Vue Router"],
+    demoUrl:
+      "https://vue3-quiz.netlify.app/",
+    githubUrl:"https://github.com/jagriti-Singh12/vue-quiz-app",
+  },
 ];
 
 export const ProjectsSection = () => {
