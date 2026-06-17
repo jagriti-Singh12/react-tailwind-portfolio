@@ -10,7 +10,7 @@ export const ContactSection = () => {
     setLoading(true);
 
     const formData = new FormData(event.target);
-    formData.append("access_key", import.meta.env.FORM_ACCESS_KEY);
+    formData.append("access_key", import.meta.env.VITE_FORM_ACCESS_KEY);
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
